@@ -186,7 +186,7 @@ export default function User() {
     setResults(filteredResults);
   };
 
-  const calculateRoomCost = (rates, dateRange, isResident, nights) => {
+  const calculateRoomCost = (rates, dateRange, isResident) => {
     return rates.reduce((sum, rate) => {
       const rateStart = new Date(rate.dateRange.start);
       const rateEnd = new Date(rate.dateRange.end);
