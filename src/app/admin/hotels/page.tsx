@@ -2,8 +2,6 @@
 
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
-import Link from "next/link";
-import Navbar from "@/components/Navbar";
 
 export default function Hotels() {
   const [destinations, setDestinations] = useState(
@@ -21,7 +19,6 @@ export default function Hotels() {
   const [children, setChildren] = useState("");
   const [childAgeLimit, setChildAgeLimit] = useState(""); // Nueva variable para la edad máxima de un niño
   const [showPopup, setShowPopup] = useState(false);
-  const router = useRouter();
 
   useEffect(() => {
     if (selectedDestination) {

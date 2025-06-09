@@ -1,10 +1,10 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Link from "next/link";
 
 export default function User() {
-  const [destinations, setDestinations] = useState(
+  const [destinations] = useState(
     JSON.parse(localStorage.getItem("destinations") || "[]")
   );
   const [selectedDestination, setSelectedDestination] = useState("");
